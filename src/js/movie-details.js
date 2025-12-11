@@ -38,7 +38,8 @@ movie.gallery.forEach((image) => {
     const img = document.createElement('img')
     img.src = image
     img.alt = movie.title
-    img.width = 250
+    img.width = 360
+    img.className += "rounded shadow-lg"
     gallery.appendChild(img)
 })
 

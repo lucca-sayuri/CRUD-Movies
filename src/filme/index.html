@@ -6,55 +6,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CRUD Movies | Detalhes do Filme</title>
     <link rel="shortcut icon" href="/assets/icons/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
 </head>
 
-<body>
-    <h1>CRUD Movies | Detalhes do Filme</h1>
+<body class="bg-stone-200 font-montserrat">
 
-    <ul>
-        <li><a href="/">Início</a></li>
-    </ul>
+    <header class="bg-rose-600 mb-4">
+        <div class="max-w-7xl mx-auto p-3 text-center">
+            <a href="/">
+                <img src="/assets/images/logo.png" alt="Logo">
+            </a>
+        </div>
+    </header>
 
-    <hr>
-
-    <h2>Detalhes do Filme</h2>
-
-    <div id="movie-container">
+    <div id="movie-container" class="px-4 mb-9">
         <template id="movie-template">
-            <img src="" alt="" width="300" style="float: left; padding-right: 10px;" class="movie-cover">
+            <div class="flex mb-6">
+                <img src="" alt="" class="movie-cover mr-6 rounded shadow-lg">
 
-            <h3 class="movie-title"></h3>
-            <p class="movie-original-title"></p>
+                <div>
+                    <h3 class="movie-title text-3xl font-bold font-geom"></h3>
+                    <p class="movie-original-title text-gray-500 font-geom text-lg mb-6"></p>
 
-            <p><b>Sinopse:</b></p>
-            <p class="movie-synopsis"></p>
+                    <p><b>Sinopse:</b></p>
+                    <p class="movie-synopsis mb-3"></p>
 
-            <p><b>Elenco:</b></p>
-            <p class="movie-cast"></p>
+                    <p><b>Elenco:</b></p>
+                    <p class="movie-cast mb-3"></p>
 
-            <!-- elenco, direcao, genero, inadequacao, duracao -->
-            <p><b>Direção:</b></p>
-            <p class="movie-directors"></p>
+                    <!-- elenco, direcao, genero, inadequacao, duracao -->
+                    <p><b>Direção:</b></p>
+                    <p class="movie-directors mb-3"></p>
 
-            <p><b>Genero:</b></p>
-            <p class="movie-genres"></p>
+                    <p><b>Genero:</b></p>
+                    <p class="movie-genres mb-3"></p>
 
-            <p><b>Inadequação:</b></p>
-            <p class="movie-content-rating"></p>
+                    <p><b>Inadequação:</b></p>
+                    <p class="movie-content-rating mb-3"></p>
 
-            <p><b>Duração:</b></p>
-            <p class="movie-duration"></p>
+                    <p><b>Duração:</b></p>
+                    <p class="movie-duration mb-3"></p>
+                </div>
+            </div>
 
-            <hr>
+            <p class="font-geom font-bold text-2xl mb-3">Vídeos do Filme</p>
+            <iframe class="movie-trailer mb-6" width="640" height="340" src="" frameborder="0"></iframe>
 
-            <iframe class="movie-trailer" width="640" height="390" src="" frameborder="0"></iframe>
-
-            <hr>
-
-            <p>Imagens do Filme</p>
-            <div class="movie-gallery"></div>
+            <p class="font-geom font-bold text-2xl mb-3">Imagens do Filme</p>
+            <div class="movie-gallery grid grid-cols-4 gap-6"></div>
         </template>
     </div>
+
+        <footer class="text-white">
+        <!-- Parte 1 -->
+        <div class="bg-rose-600">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-3">
+                <div>
+                    <h3 class="font-semibold text-2xl mb-2">Redes Sociais</h3>
+                    <ul>
+                        <li><a href="#"><i class="ph-fill ph-facebook-logo"></i> Facebook</a></li>
+                        <li><a href="#"><i class="ph-fill ph-instagram-logo"></i> Instagram</a></li>
+                        <li><a href="#"><i class="ph-fill ph-youtube-logo"></i> YouTube</a></li>
+                        <li><a href="#"><i class="ph-fill ph-twitter-logo"></i> Twitter</a></li>
+                        <li><a href="#"><i class="ph-fill ph-linkedin-logo"></i> LinkedIn</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold text-2xl mb-2">Mapa do site</h3>
+                    <ul>
+                        <li><a href="#">Filmes</a></li>
+                        <li><a href="#">Atores</a></li>
+                        <li><a href="#">Diretores</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold text-2xl mb-2">Endereço</h3>
+                    <address>
+                        Av. Ipanema, 165, Sala 1105<br>
+                        Empresarial 18 do Forte, Barueri - SP<br>
+                        06472-002
+                    </address>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold text-2xl mb-2">Contato</h3>
+                    <p>(11) 4052-2500</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Parte 2 -->
+        <div class="bg-rose-700">
+            <div class="max-w-7xl mx-auto p-3">
+                <p class="font-light text-sm">&copy; 2025 CRUD Filmes.</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="/js/movie-details.js" type="module"></script>
 </body>
