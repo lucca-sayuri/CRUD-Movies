@@ -1,0 +1,115 @@
+{
+	"movies": [
+		{
+			"id": "1",
+			"title": "Tom & Jerry: Uma Aventura no Museu",
+			"slug": "tom-e-jerry-uma-aventura-no-museu",
+			"originalTitle": "Tom and Jerry: Forbidden Compass",
+			"releaseDate": "08/01/2026",
+			"synopsis": "A dupla mais famosa do mundo está de volta! Tom & Jerry se envolvem em mais uma de suas aventuras quando, durante uma perseguição dentro de um museu, eles encontram um objeto mágico e acabam sendo transportados no tempo. Perdidos em uma época distante e vivendo muitas confusões pelo caminho, eles precisarão deixar as brigas de lado e trabalhar juntos para encontrar um jeito de voltar para casa antes que seja tarde.",
+			"cast": [
+				"Li Baixin",
+				"Zhang Gang",
+				"Jiang Wen Jin",
+				"Hanlin Li",
+				"Xiongfei Tu",
+				"Zhang Wenjie",
+				"Shun Zi"
+			],
+			"directors": [
+				"Gang Zhang"
+			],
+			"genres": [
+				"Comédia",
+				"Fantasia",
+				"Família",
+				"Aventura",
+				"Animação"
+			],
+			"contentRating": [
+				"Violência fantasiosa"
+			],
+			"duration": "01:39:00",
+			"cover": "https://midias.imagemfilmes.com.br/capas/1bf2fef1-1f2f-4ec6-bf5e-476a5c5d0901_m.jpg",
+			"trailer": "http://www.youtube.com/embed/kae_1CwyqTo",
+			"gallery": [
+				"https://midias.imagemfilmes.com.br/fotos/9ad9f839-e8fc-4835-a8dd-0cf438b43b94_thumb.jpg",
+				"https://midias.imagemfilmes.com.br/fotos/aeaeaabb-9419-4a76-a3c9-72296d03352b_thumb.jpg",
+				"https://midias.imagemfilmes.com.br/fotos/c3828c02-23ff-465a-809d-cbe1cfb9a154_thumb.jpg",
+				"https://midias.imagemfilmes.com.br/fotos/1c099e08-13b2-403e-977d-1cc92ec87ea7_thumb.jpg",
+				"https://midias.imagemfilmes.com.br/fotos/76fe67ea-21c9-457c-8371-d6369a76b2f6_thumb.jpg",
+				"https://midias.imagemfilmes.com.br/fotos/88e54b47-ca95-450f-9ec3-a09987efc802_thumb.jpg",
+				"https://midias.imagemfilmes.com.br/fotos/92654e25-cbb0-443a-b5cc-8a73be60980a_thumb.jpg",
+				"https://midias.imagemfilmes.com.br/fotos/f53876ed-8a92-413c-bb0e-2c9dc589d7be_thumb.jpg"
+			]
+		},
+		{
+			"id": "2",
+			"title": "Deu Preguiça",
+			"slug": "deu-preguica",
+			"originalTitle": "The Sloth Lane",
+			"releaseDate": "24/04/2025",
+			"synopsis": "Após uma tempestade destruir seu lar, uma família de preguiças liderada por Gabriella (Heloísa Périssé) é forçada a se mudar para a agitada cidade grande, levando consigo seu food truck e um antigo livro de receitas. Deixando para trás a vida tranquila e guiados pela energia da jovem Laura (Tontom), eles embarcam nessa aventura com uma missão: mostrar que, nesta família, o prato principal é a diversão! Mas quando a ambiciosa empresária Dotti coloca os olhos nas preciosas receitas da família, eles terão que se unir para proteger suas tradições e tudo aquilo que acreditam.",
+			"cast": [
+				"Leslie Jones (Dotti Pace)",
+				"Remy Hii (Platy)",
+				"Olivia Vásquez (Gabriella)",
+				"Teo Vergara (Laura)",
+				"Dan Brumm (Chief Furbank)",
+				"Ben Gorroño (Luis)",
+				"Facundo Hache Herrera (Mani)",
+				"Matteo Romaniuk (Arlo)",
+				"Thalia Colettis (Additional Voices)",
+				"Benjamin Gorroño (Luis)",
+				"Andrew Cook (Coach Jerry)"
+			],
+			"directors": [
+				"Ricard Cussó",
+				"Tania Vincent"
+			],
+			"genres": [
+				"Família",
+				"Aventura",
+				"Animação"
+			],
+			"contentRating": "Violência fantasiosa",
+			"duration": "01:29:00",
+			"platforms": [
+				{
+					"name": "Apple iTunes",
+					"url": "https://itunes.apple.com/br/movie/deu-pregui%C3%A7a/id1806228120"
+				},
+				{
+					"name": "Net Now",
+					"url": "https://www.clarotvmais.com.br/filme/deu-preguica/3271192"
+				},
+				{
+					"name": "Prime Video",
+					"url": "https://www.primevideo.com/-/pt/detail/0TN2TEN4QUVPQ01BANJQ12H088/ref=atv_sr_fle_c_Tn74RA_1_1_1?sr=1-1&pageTypeIdSource=ASIN&pageTypeId=B0F385L2JN&qid=1746647540439"
+				},
+				{
+					"name": "Vivo",
+					"url": "https://www.vivotv.com.br/details/movie/deu-preguica-40201422"
+				},
+				{
+					"name": "Youtube Filmes",
+					"url": "https://www.youtube.com/watch?v=_AtR5cpIpok"
+				}
+			],
+			"cover": "https://midias.imagemfilmes.com.br/capas/a21efa2b-e426-48aa-9486-ed86647b4302_m.jpg",
+			"trailer": "http://www.youtube.com/embed/t9394RyT6qo",
+			"gallery": [
+				"https://midias.imagemfilmes.com.br/fotos/b3e789cb-2c92-49f8-b4aa-a87d676633f5_thumb.jpg",
+				"https://midias.imagemfilmes.com.br/fotos/ff9403bd-9944-403f-824d-6e1cd6e060f5_thumb.jpg",
+				"https://midias.imagemfilmes.com.br/fotos/c79b4125-28d2-42d9-bf65-ce789bc7e319_thumb.jpg",
+				"https://midias.imagemfilmes.com.br/fotos/c9c1701a-5fd1-4b0e-bad8-dc749b61b47e_thumb.jpg",
+				"https://midias.imagemfilmes.com.br/fotos/b4de951b-c3b0-4a7e-a378-43b9ec0cf51e_thumb.jpg",
+				"https://midias.imagemfilmes.com.br/fotos/dc5fa9a2-7fb0-433e-8bf6-74f4701fe160_thumb.jpg",
+				"https://midias.imagemfilmes.com.br/fotos/2aabaf69-873c-4635-807a-21366579a670_thumb.jpg",
+				"https://midias.imagemfilmes.com.br/fotos/b366e739-b12d-403a-8080-63ea1ec79daa_thumb.jpg",
+				"https://midias.imagemfilmes.com.br/fotos/97c44951-c03a-4b56-af80-0d7598e06963_thumb.jpg",
+				"https://midias.imagemfilmes.com.br/fotos/8bfbdd1c-a4be-40c4-bb44-96cdb08df3cb_thumb.jpg"
+			]
+		}
+	]
+}
