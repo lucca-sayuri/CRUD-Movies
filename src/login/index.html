@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRUD Movies | Detalhes do Filme</title>
-    <link rel="shortcut icon" href="/assets/icons/favicon.png" type="image/x-icon">
+    <title>CRUD Filmes</title>
+    <link rel="icon" href="/assets/icons/favicon.png">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
@@ -13,7 +13,7 @@
 
 <body class="bg-stone-200 font-montserrat">
 
-    <header class="bg-rose-600 mb-3">
+    <header class="bg-rose-600">
         <div class="flex justify-around items-center px-5 py-3">
             <a href="/">
                 <img src="/assets/images/logo.png" alt="Logo">
@@ -25,45 +25,24 @@
         </div>
     </header>
 
-    <div id="movie-container" class="px-4 mb-9">
-        <template id="movie-template">
-            <div class="flex mb-6">
-                <img src="" alt="" class="movie-cover mr-6 rounded shadow-lg">
+        <div class="flex items-center mx-auto justify-center flex-col rounded shadow-lg max-w-[600px] px-10 py-8 bg-stone-50 my-10">
+            <h3 class="text-5xl font-geom font-bold mb-8 text-shadow-lg">Login</h3>
 
-                <div>
-                    <h3 class="movie-title text-3xl font-bold font-geom"></h3>
-                    <p class="movie-original-title text-gray-500 font-geom text-lg mb-6"></p>
+            <form action="" method="post" class="flex flex-col w-full">
 
-                    <p><b>Sinopse:</b></p>
-                    <p class="movie-synopsis mb-3"></p>
+                <label for="email" class="text-stone-700">Email</label>
+                <input type="email" name="email" id="email" class="px-2 py-3 w-full border border-stone-400 mb-10 rounded" placeholder="Insira seu email...">
 
-                    <p><b>Elenco:</b></p>
-                    <p class="movie-cast mb-3"></p>
+                <label for="password" class="text-stone-700">Senha</label>
+                <input type="password" name="password" id="password" class="px-2 py-3 w-full border border-stone-400 rounded mb-10" placeholder="Insira sua senha...">
 
-                    <!-- elenco, direcao, genero, inadequacao, duracao -->
-                    <p><b>Direção:</b></p>
-                    <p class="movie-directors mb-3"></p>
+                <button class="submit px-6 py-2 text-center font-bold w-1/2 mx-auto rounded cursor-pointer text-emerald-50 text-lg bg-emerald-400 hover:bg-emerald-500 active:bg-emerald-600" type="submit">Entrar</button>
+            </form>
 
-                    <p><b>Genero:</b></p>
-                    <p class="movie-genres mb-3"></p>
+        </div>
 
-                    <p><b>Inadequação:</b></p>
-                    <p class="movie-content-rating mb-3"></p>
 
-                    <p><b>Duração:</b></p>
-                    <p class="movie-duration mb-3"></p>
-                </div>
-            </div>
-
-            <p class="font-geom font-bold text-2xl mb-3">Vídeos do Filme</p>
-            <iframe class="movie-trailer mb-6" width="640" height="340" src="" frameborder="0"></iframe>
-
-            <p class="font-geom font-bold text-2xl mb-3">Imagens do Filme</p>
-            <div class="movie-gallery grid grid-cols-4 gap-6"></div>
-        </template>
-    </div>
-
-        <footer class="text-white">
+    <footer class="text-white">
         <!-- Parte 1 -->
         <div class="bg-rose-600">
             <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-3">
@@ -112,7 +91,7 @@
         </div>
     </footer>
 
-    <script src="/js/movie-details.js" type="module"></script>
+    <script src="../js/login.js" type="module"></script>
 </body>
 
 </html>

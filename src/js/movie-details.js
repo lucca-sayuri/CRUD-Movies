@@ -23,18 +23,37 @@ clone.querySelector('.movie-original-title').textContent = movie.originalTitle
 clone.querySelector('.movie-synopsis').textContent = movie.synopsis
 clone.querySelector('.movie-duration').textContent = movie.duration
 
-// join arrays
-clone.querySelector('.movie-cast').textContent = movie.cast.join(", ")
-clone.querySelector('.movie-directors').textContent = movie.directors.join(", ")
-clone.querySelector('.movie-genres').textContent = movie.genres.join(", ")
-clone.querySelector('.movie-content-rating').textContent = movie.contentRating
+if (Array.isArray(movie.cast) === true) {
+    clone.querySelector('.movie-cast').textContent = movie.cast.join(", ", ", ")
+} else {
+    clone.querySelector('.movie-cast').textContent = movie.cast
+}
 
+if (Array.isArray(movie.directors) === true) {
+    clone.querySelector('.movie-directors').textContent = movie.directors.join(", ", ", ")
+} else {
+    clone.querySelector('.movie-directors').textContent = movie.directors
+}
+
+if (Array.isArray(movie.genres) === true) {
+    clone.querySelector(".movie-genres").textContent = movie.genres.join(", ", ", ")
+} else {
+    clone.querySelector(".movie-genres").textContent = movie.genres
+}
+
+if (Array.isArray(movie.contentRating) === true) {
+    clone.querySelector(".movie-content-rating").textContent = movie.contentRating.join(", ", ", ")
+} else {
+    clone.querySelector(".movie-content-rating").textContent = movie.contentRating
+}
 // trailer
 clone.querySelector('.movie-trailer').src = movie.trailer
 
 // gallery
 const gallery = clone.querySelector('.movie-gallery')
-movie.gallery.forEach((image) => {
+
+if (Object.hasOwn(movie, "gallery")) {
+    movie.gallery.forEach((image) => {
     const img = document.createElement('img')
     img.src = image
     img.alt = movie.title
@@ -42,5 +61,6 @@ movie.gallery.forEach((image) => {
     img.className += "rounded shadow-lg"
     gallery.appendChild(img)
 })
+}
 
 document.querySelector("#movie-container").appendChild(clone)

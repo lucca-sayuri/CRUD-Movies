@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Filmes</title>
+    <link rel="icon" href="/assets/icons/favicon.png">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+</head>
+
+<body class="bg-stone-200 font-montserrat">
+    <header class="bg-rose-600">
+        <div class="flex justify-around items-center px-5 py-3">
+            <a href="/">
+                <img src="/assets/images/logo.png" alt="Logo">
+            </a>
+
+            <button class="text-white text-lg font-bold">
+                <a href="/login/">Login</a>
+            </button>
+        </div>
+    </header>
+
+    <div class="movies-container bg-stone-50 max-w-[1500px] px-6 py-8 rounded shadow my-10 mx-auto">
+        <form action="/db.json" method="post" class="flex justify-center items-center flex-col" id="form">
+
+            <div class="adder grid grid-rows-3 grid-cols-4 grid-flow-col gap-y-8 gap-x-2 text-end mb-8">
+                <div>
+                    <label for="title">Título</label>
+                    <input type="text" name="title" id="title" class="px-1 py-1 border border-stone-400 rounded"
+                        placeholder="Insira o título...">
+                </div>
+
+                <div>
+                    <label for="originalTitle">Título original</label>
+                    <input type="text" name="originalTitle" id="originalTitle"
+                        class="px-1 py-1 border border-stone-400 rounded" placeholder="Insira o título original...">
+                </div>
+
+                <div>
+                    <label for="releaseDate">Lançamento</label>
+                    <input type="text" name="releaseDate" id="releaseDate"
+                        class="px-1 py-1 border border-stone-400 rounded" placeholder="Insira a data...">
+                </div>
+
+                <div>
+                    <label for="synopsis">Sinopse</label>
+                    <input type="text" name="synopsis" id="synopsis" class="px-1 py-1 border border-stone-400 rounded"
+                        placeholder="Insira a sinopse...">
+                </div>
+
+                <div>
+                    <label for="cover">Capa</label>
+                    <input type="text" name="cover" id="cover" class="px-1 py-1 border border-stone-400 rounded"
+                        placeholder="Insira a capa (link) ...">
+
+                    <div class="cover-preview-container hidden absolute">
+                        <img src="" alt="" class="cover-preview">
+                    </div>
+                </div>
+
+                <div>
+                    <label for="cast">Elenco</label>
+                    <input type="text" name="cast" id="cast" class="px-1 py-1 border border-stone-400 rounded"
+                        placeholder='Insira o elenco...'>
+                </div>
+
+                <div>
+                    <label for="directors">Direção</label>
+                    <input type="text" name="directors" id="directors" class="px-1 py-1 border border-stone-400 rounded"
+                        placeholder='Insira os diretores...'>
+                </div>
+
+                <div>
+                    <label for="genres">Gêneros</label>
+                    <input type="text" name="genres" id="genres" class="px-1 py-1 border border-stone-400 rounded"
+                        placeholder='Insira o(s) gênero(s)...'>
+                </div>
+
+                <div>
+                    <label for="contentRating">Inadequação</label>
+                    <input type="text" name="contentRating" id="contentRating"
+                        class="px-1 py-1 border border-stone-400 rounded" placeholder='Insira as inadequações...'>
+                </div>
+
+                <div>
+                    <label for="duration">Duração</label>
+                    <input type="text" name="duration" id="duration" class="px-1 py-1 border border-stone-400 rounded"
+                        placeholder="Insira a duração...">
+                </div>
+
+                <div>
+                    <label for="trailer">Trailer</label>
+                    <input type="text" name="trailer" id="trailer" class="px-1 py-1 border border-stone-400 rounded"
+                        placeholder='Insira o trailer (link) ...'>
+                </div>
+            </div>
+
+            <input type="submit" id="submit" value="Adicionar Filme"
+                class="text-center text-lg bg-green-400 px-6 py-2 cursor-pointer text-white font-bold rounded shadow">
+
+        </form>
+    </div>
+
+    <footer class="text-white">
+        <!-- Parte 1 -->
+        <div class="bg-rose-600">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-3">
+                <div>
+                    <h3 class="font-semibold text-2xl mb-2">Redes Sociais</h3>
+                    <ul>
+                        <li><a href="#"><i class="ph-fill ph-facebook-logo"></i> Facebook</a></li>
+                        <li><a href="#"><i class="ph-fill ph-instagram-logo"></i> Instagram</a></li>
+                        <li><a href="#"><i class="ph-fill ph-youtube-logo"></i> YouTube</a></li>
+                        <li><a href="#"><i class="ph-fill ph-twitter-logo"></i> Twitter</a></li>
+                        <li><a href="#"><i class="ph-fill ph-linkedin-logo"></i> LinkedIn</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold text-2xl mb-2">Mapa do site</h3>
+                    <ul>
+                        <li><a href="#">Filmes</a></li>
+                        <li><a href="#">Atores</a></li>
+                        <li><a href="#">Diretores</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold text-2xl mb-2">Endereço</h3>
+                    <address>
+                        Av. Ipanema, 165, Sala 1105<br>
+                        Empresarial 18 do Forte, Barueri - SP<br>
+                        06472-002
+                    </address>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold text-2xl mb-2">Contato</h3>
+                    <p>(11) 4052-2500</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Parte 2 -->
+        <div class="bg-rose-700">
+            <div class="max-w-7xl mx-auto p-3">
+                <p class="font-light text-sm">&copy; 2025 CRUD Filmes.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/admin.js" type="module"></script>
+</body>
+
+</html>
