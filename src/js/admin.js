@@ -4,6 +4,7 @@ const movies = await response.json()
 
 const submit = document.querySelector("#submit")
 const form = document.querySelector("#form")
+const formInputs = document.querySelectorAll("input")
 
 submit.addEventListener('click', (event) => {
     event.preventDefault()
@@ -36,4 +37,13 @@ submit.addEventListener('click', (event) => {
         },
         body: jsonData
     })
+
+    formInputs.forEach(input => {
+
+        if (input.type != "submit") {
+            input.value = ""
+        }
+
+    });
+
 })
